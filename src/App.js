@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Basic1 from "./component/basic1";
+import Basic1 from "./component/Basic1";
 function App() {
   return (
     <div className="App">

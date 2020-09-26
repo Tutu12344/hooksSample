@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
-const basic1 = (props) => {
-  const clickHandler = () => {
-    console.log("clicked");
-  };
+const Basic1 = (props) => {
+  //   const clickHandler = () => {
+  //     console.log("clicked");
+  //   };
+
+  const [count, setCount] = useState(0);
   return (
     <div>
       <h1>{props.name}</h1>
-      <button onClick={clickHandler}>Click</button>
+      <button
+        onClick={() => {
+          setCount((prevCount) => prevCount + 1);
+          setCount((prevCount) => prevCount + 1);
+        }}
+      >
+        Count{count}
+      </button>
+      {console.log(setCount)}
     </div>
   );
 };
 
-export default basic1;
+export default Basic1;
