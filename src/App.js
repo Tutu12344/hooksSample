@@ -8,6 +8,7 @@ import B from "./component/B";
 // import BasicUseEffect from "./component/BasicUseEffect";
 // import TimerContainer from "./component/TimerContainer";
 import ApiFetch from "./component/ApiFetch";
+import BasicReducer from "./component/BasicReducer";
 function App() {
   return (
     <AppContext.Provider value={"value from App.js"}>
@@ -17,8 +18,9 @@ function App() {
           {/* <Basic2 />
         <BasicUseEffect /> */}
           {/* <TimerContainer /> */}
-          <ApiFetch />
-          <B />
+          {/* <ApiFetch />
+          <B /> */}
+          <BasicReducer />
         </header>
       </div>
     </AppContext.Provider>
