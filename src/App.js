@@ -11,6 +11,7 @@ import ApiFetch from "./component/ApiFetch";
 import BasicReducer from "./component/BasicReducer";
 import rootReducer from "./reducers/index";
 import { SELL_MEAT, SELL_VEGETABLE } from "./reducers/actionTypes";
+import DrfApiFetch from "./component/DrfApiFetch";
 function App() {
   const initialState = {
     reducerMeat: { numOfMeat: 30 },
@@ -23,7 +24,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <button onClick={() => dispatch({ type: SELL_MEAT })}>
+          <DrfApiFetch />
+          {/* <button onClick={() => dispatch({ type: SELL_MEAT })}>
             Sell meat
           </button>
           TodaysMeat:{state.reducerMeat.numOfMeat}
@@ -31,7 +33,7 @@ function App() {
           <button onClick={() => dispatch({ type: SELL_VEGETABLE })}>
             Sell Vegetable
           </button>
-          TodaysVegetable:{state.reducerVegetable.numOfVegetable}
+          TodaysVegetable:{state.reducerVegetable.numOfVegetable} */}
           {/* <Basic2 />
         <BasicUseEffect /> */}
           {/* <TimerContainer /> */}
